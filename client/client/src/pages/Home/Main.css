@@ -1,0 +1,42 @@
+.mainComponent{
+   
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    background-size: cover;
+    overflow-x: hidden;
+    
+}
+.nav{
+    width: 100%;
+    height: 12%;
+    background-color: grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: large;
+    font-weight:bold;
+    position: fixed;
+    overflow: hidden;
+}
+.midnav{
+    display: flex;
+    gap:4rem;
+}
+.body{
+    width:100%;
+    height: 88%;
+    margin-top:8%;
+    box-sizing: border-box;
+}
+.btnClick{
+    cursor: pointer;
+
+}
+
+.btnav{
+    cursor: pointer;
+}
