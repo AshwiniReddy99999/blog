@@ -1,10 +1,12 @@
 import './Upload.css'
 
 import {useState} from 'react'
+import { useNavigate } from 'react-router-dom';
 
 
 function Upload(){
     const [blogData,setBlogData]=useState({title:"",description:"",image:""});
+    const navigate=useNavigate();
     
     const handleCreateBlog=async(e)=>{
         e.preventDefault();
@@ -26,6 +28,7 @@ function Upload(){
             data.json()
         }).then((res)=>{
             console.log("user registered")
+            navigate('/main')
         }).catch((e)=>{
             console.log(e.message)
         })
